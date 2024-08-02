@@ -14,8 +14,7 @@ function _gf {
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$HOME/go/bin
+export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 
 # history setup
 setopt SHARE_HISTORY
