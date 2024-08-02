@@ -10,7 +10,7 @@ autoload -U +X compinit && compinit
 compdef _gf gf
 
 function _gf {
-    _arguments "1: :($(gf -list))"
+    _arguments "1: :(\$(gf -list))"
 }
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
