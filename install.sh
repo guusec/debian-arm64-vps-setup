@@ -6,6 +6,7 @@ if [ -e "$HOME/.zshrc" ]; then
 else
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 cat <<POG >> ~/.zshrc
+autoload -U +X compinit && compinit
 compdef _gf gf
 
 function _gf {
@@ -26,9 +27,6 @@ setopt HIST_EXPIRE_DUPS_FIRST
 # autocompletion using arrow keys (based on history)
 bindkey '\e[A' history-search-backward
 bindkey '\e[B' history-search-forward
-
-autoload -U compinit && compinit
-
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 bindkey '^[[3~' delete-char
