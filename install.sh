@@ -71,6 +71,7 @@ go install github.com/BishopFox/jsluice/cmd/jsluice@latest
 go install github.com/bitquark/shortscan/cmd/shortscan@latest
 go install github.com/tomnomnom/assetfinder@latest
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
 go install github.com/projectdiscovery/tlsx/cmd/tlsx@latest
 go install github.com/denandz/sourcemapper@latest
 go install github.com/003random/getJS/v2@latest
