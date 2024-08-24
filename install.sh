@@ -2,6 +2,7 @@ sudo apt install git tmux zsh wget python3-venv silversearcher-ag neovim
 
 curl -LO https://github.com/guusec/nvim-config/raw/main/nvim.tar.gz
 tar xf nvim.tar.gz -C $HOME/.config/
+rm nvim.tar.gz
 
 if [ -e "$HOME/.zshrc" ]; then
   echo ".zshrc already exists"
